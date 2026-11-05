@@ -1,0 +1,3 @@
+# grab-window writes capture-<timestamp>.png into the current directory by default
+*.png
+captures/

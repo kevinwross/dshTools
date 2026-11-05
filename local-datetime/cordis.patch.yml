@@ -1,0 +1,7 @@
+# Host-only bundle: one global tool row. Registered on the root context, so the
+# local-datetime tool is visible to every Agent in this profile.
+
+- insert:
+    - id: local-datetime
+      name: '@local/dsh-tool-local-datetime'
+      config: {}

@@ -1,0 +1,11 @@
+# ornith-dsh Modelfile  —  canonical rebuild source
+# Regenerate with:  ollama create ornith-dsh:latest -f "C:\Users\kevin\source\repos\DSH Tools\ornith-dsh.Modelfile"
+# Base is the existing tagged model, so weights, projector and GGUF chat template are inherited unchanged.
+# Only context and output-cap parameters differ from the previous build.
+FROM ornith-dsh:latest
+
+PARAMETER num_ctx 192000
+PARAMETER num_predict 50000
+PARAMETER repeat_penalty 1.05
+PARAMETER temperature 0.15
+PARAMETER top_p 0.9
