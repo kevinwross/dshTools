@@ -91,6 +91,9 @@ Remove-Item "$env:USERPROFILE\.agents\skills"    # removes the junction, not the
 - **Execution policy blocks the script** — `pwsh -ExecutionPolicy Bypass -File .\install.ps1`.
 - **The repository moved** — re-run the installer; the junction and shims store absolute
   paths, so they cannot follow it.
+- **Every shell command fails with `no sandbox backend is usable on this host`** — a
+  Linux/DSH host problem, not an installer one; see
+  [FixBashSandboxOnLinux.md](FixBashSandboxOnLinux.md).
 
 ## Notes
 
