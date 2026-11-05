@@ -97,9 +97,9 @@ Remove-Item "$env:USERPROFILE\.agents\skills"    # removes the junction, not the
 
 ## Notes
 
-- This folder is not a git repository yet. `git init`, a remote, and a `.gitignore` are
-  yours to add before "clone" means anything. Captures in the root (`*.png`) are worth
-  ignoring so clones stay small.
+- This repository is already initialised: `.git`, the `origin` remote, and a `.gitignore`
+  that excludes `*.png` and `captures/` — grab-window's default output — so clones stay
+  small. Keep capture PNGs out of the history by writing them where that ignores them.
 - The installer deliberately does not touch Ollama models, provider settings, or
   `cordis.patch.yml`. Those are machine-specific and documented separately in
   [MakeOrnithWorkWithDSH.md](MakeOrnithWorkWithDSH.md).

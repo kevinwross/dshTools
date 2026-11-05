@@ -10,6 +10,7 @@ installer that puts both in place on a new machine.
 | `install.ps1` | Idempotent installer: skill-root junction, PATH shims, plugin registration |
 | `INSTALL.md` | Prerequisites, options, manual equivalent, uninstall |
 | `MakeOrnithWorkWithDSH.md` | Notes for getting long-context Ollama models working on another machine |
+| `FixBashSandboxOnLinux.md` | Linux: why every shell command fails with `no sandbox backend is usable`, and how to fix both backends |
 
 ## Install on a new machine
 
